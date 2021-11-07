@@ -1,14 +1,12 @@
 from app import db
 
 class Fuel_data(db.Model):
-    id = db.Column(db.bigint, primary_key=True)
-    date = db.Column(db.date, index=True, unique=True)
-    ULSP = db.Column(db.float)
-    ULSD = db.Column(db.float)
-    ULSP_duty = db.Column(db.float)
-    ULSD_duty = db.Column(db.float)
-    ULSP_vat = db.Column(db.float)
-    ULSD_vat = db.Column(db.float)
+    id = db.Column(db.Integer, primary_key=True)
+    date = db.Column(db.Date, index=True, unique=True)
+    ULSP = db.Column(db.Float)
+    ULSD = db.Column(db.Float)
+    ULSP_duty = db.Column(db.Float)
+    ULSD_duty = db.Column(db.Float)
+    ULSP_vat = db.Column(db.Float)
+    ULSD_vat = db.Column(db.Float)
 
-    def __repr__(self):
-        return '<Fuel_db {}>'.format(self.date)

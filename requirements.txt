@@ -1,2 +1,5 @@
 flask
 pymessenger
+flask-sqlalchemy
+python-dotenv
+flask-migrate

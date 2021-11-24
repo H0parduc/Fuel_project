@@ -3,3 +3,5 @@ pymessenger
 flask-sqlalchemy
 python-dotenv
 flask-migrate
+mysqlclient
+pandas

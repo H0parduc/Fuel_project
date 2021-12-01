@@ -15,11 +15,6 @@ def csv_read_to_sql():
     headers = ["date", "uslp", "usld", "uslp_duty", "usld_duty", "uslp_vat", "usld_vat"]
     read_data.columns = headers
 
-    # print(read_data)
-    # print(read_data)
-# read_data.to_sql('fuel_data', con=Config.SQLALCHEMY_DATABASE_URI, if_exists='append', index=True, index_label='id')
-    # print(read_data)
-    # print("Data uploaded to mysql")
     diff = pd.concat([read_sql, read_data]).drop_duplicates(keep=False)
     print(diff)
 

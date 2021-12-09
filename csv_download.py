@@ -2,6 +2,7 @@ import datetime
 import requests
 import os
 from bs4 import BeautifulSoup
+import urllib.request
 
 
 def monday_data():
@@ -23,13 +24,11 @@ def download_file():
     # check if file already exists
     mo = monday_data()
     url = url_csv()
-    filename = f'CSV_{mo}.csv'
+    filename = './Data/' + f'CSV_{mo}.csv'
 
     if not os.path.isfile(filename):
         print('Downloading File')
         response = requests.get(url)
-        # Check if the response is ok (200)
-        print(response.status_code)
         if response.status_code == 200:
             # Open file and write the content
             with open(filename, 'wb') as file:

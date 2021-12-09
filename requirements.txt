@@ -6,3 +6,4 @@ flask-migrate
 mysqlclient
 pandas
 BeautifulSoup4
+tabulate

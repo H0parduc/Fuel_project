@@ -1,4 +1,7 @@
 from app import db
+from sqlalchemy.orm import declarative_base
+
+Base = declarative_base()
 
 
 class Fuel_data(db.Model):

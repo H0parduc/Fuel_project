@@ -8,3 +8,4 @@ pandas
 BeautifulSoup4
 tabulate
 psycopg2
+gunicorn

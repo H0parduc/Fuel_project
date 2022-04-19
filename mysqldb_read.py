@@ -19,3 +19,4 @@ def create_session():
     Session = sessionmaker(engine)
     session = Session()
     return session
+

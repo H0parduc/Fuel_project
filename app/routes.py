@@ -7,9 +7,9 @@ from dotenv import load_dotenv
 from sqlalchemy import create_engine, MetaData
 from sqlalchemy.ext.automap import automap_base
 from sqlalchemy.orm import sessionmaker
-from flask import render_template, request
+from flask import render_template
 import random
-from flask import Flask, request
+from flask import request
 from pymessenger.bot import Bot
 import os
 
@@ -98,6 +98,7 @@ def all_record():
 
 #bot code
 
+#csere 
 ACCESS_TOKEN = 'ACCESS_TOKEN'   #ACCESS_TOKEN = os.environ['ACCESS_TOKEN']
 VERIFY_TOKEN = 'VERIFY_TOKEN'   #VERIFY_TOKEN = os.environ['VERIFY_TOKEN']
 bot = Bot (ACCESS_TOKEN)
@@ -149,3 +150,4 @@ def send_message(recipient_id, response):
     #sends user the text message provided via input response parameter
     bot.send_text_message(recipient_id, response)
     return "success"
+

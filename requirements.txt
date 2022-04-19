@@ -9,3 +9,5 @@ BeautifulSoup4
 tabulate
 psycopg2
 gunicorn
+matplotlib
+ipychart

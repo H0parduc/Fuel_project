@@ -1,0 +1,13 @@
+flask
+pymessenger
+flask-sqlalchemy
+python-dotenv
+flask-migrate
+mysqlclient
+pandas
+BeautifulSoup4
+tabulate
+psycopg2
+gunicorn
+matplotlib
+ipychart
